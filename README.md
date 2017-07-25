@@ -4,7 +4,19 @@ This image allows you to deploy [WebProtégé][webprotege] as a [microservice][m
 
 WebProtégé is a free, open-source ontology editor and framework for building intelligent systems.
 
-## How to
+# Quick Start
+
+## Build
+```
+./build.sh
+```
+
+## Run
+```
+./run.sh
+```
+
+# How to (details)
 
 To start a new instance :
 
