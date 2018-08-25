@@ -6,21 +6,25 @@ WebProtégé is a free, open-source ontology editor and framework for building i
 
 # Quick Start
 
-## Build
-```
-./build.sh
-```
-
 ## Run
 ```
 ./run.sh
+```
+or, you can just use docker-compose
+```
+docker-compose up -d
+```
+
+## Build
+```
+./build.sh
 ```
 
 # How to (details)
 
 To start a new instance :
 
-    docker run --name webprotege -d -v webprotege_data:/data/webprotege --link mongodb -p 8888:8080 docker.io/skyplabs/webprotege
+    docker run --name webprotege -d -v webprotege_data:/data/webprotege --link mongodb -p 8888:8080 openkbs/docker-webprotege
 
 The web application will be accessible from the host system on port *8888*. All the persistent data will be stored in a volume handled by Docker and called *webprotege_data*. *mongodb* must be the name of a [MongoDB][mongodb] docker container listening on port *27017*.
 

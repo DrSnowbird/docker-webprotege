@@ -9,7 +9,8 @@ services:
       - "38080:8080"
     volumes:
       - ${HOME}/docker-data/webprotege/data/webprotege:/data/webprotege
-
+    env_file:
+      - ./.env
   mongodb:
     image: mongo:3
     volumes:
